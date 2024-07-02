@@ -1,0 +1,28 @@
+
+totalAmount = round(100 * float(input("Enter the total cost of the purchase: $")))
+receivedAmount = round(100 * float(input("Enter the amount given to the cashier: $")))
+
+change = receivedAmount - totalAmount
+
+print("Your change:")
+
+dollars = int(change / 100)
+change = change - (dollars * 100)  # ACTION ITEM: What is the purpose of this line?
+
+quarters = int(change / 25)
+change = change - (quarters * 25)
+
+dimes = int(change / 10)
+change = change - (dimes * 10)
+
+nickels = int(change / 5)
+change = change - (nickels * 5)
+
+pennies = int(change / 1)
+
+print("   dollars       ",      dollars)
+print("   quarters      ",     quarters)
+print("   dimes         ",        dimes)
+print("   nickels       ",      nickels)
+print("   pennnies      ",     pennies)
+
