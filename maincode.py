@@ -9,7 +9,6 @@ print("Your change:")
 dollars = int(change / 100)
 change = change - (dollars * 100)  
 
-
 quarters = int(change / 25)
 change = change - (quarters * 25)
 
@@ -20,7 +19,6 @@ nickels = int(change / 5)
 change = change - (nickels * 5)
 
 pennies = int(change / 1)
-
 
 print("   dollars       ",      dollars)
 print("   quarters      ",     quarters)
